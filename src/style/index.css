@@ -122,6 +122,8 @@ div {
   height: 385px;
   justify-content: center;
   align-items: center;
+  min-width: 385px; 
+  min-height: 385px;
 }
 
 header > a:hover {
