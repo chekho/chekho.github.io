@@ -4,9 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="preload" href="./src/style/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./src/style/index.css">
+  </noscript>
   <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/x-icon">
-  <title>Portafolio</title>
+  <!-- HTML Meta Tags -->
+  <title>Portafolio | Sergio Salazar</title>
+  <meta name="description" content="Portafolio web de Ingeniero de software Sergio de Jesus Salazar Cabrera">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://chekho.xyz/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio">
+  <meta property="og:description" content="">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/images/3aca1726-e86c-479a-ad11-d75c9c2be929.png?token=x0tc2pgDLgOyHGg6fZcvSh2Mp9oQLZtFGx1rJtKebT0&height=500&width=500&expires=33291955094">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="chekho.xyz">
+  <meta property="twitter:url" content="https://chekho.xyz/">
+  <meta name="twitter:title" content="Portafolio">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/images/3aca1726-e86c-479a-ad11-d75c9c2be929.png?token=x0tc2pgDLgOyHGg6fZcvSh2Mp9oQLZtFGx1rJtKebT0&height=500&width=500&expires=33291955094">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <script src="./src/scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -17,25 +42,31 @@
     <a href="">Certificaciones</a>
     <a href="">Contacto</a>
   </header>
-  <div class="principal-container">
-    <div class="description">
-      <h1>Sergio Salazar</h1>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda vero aut, velit odio ducimus, iusto,
-        excepturi hic voluptatem in veritatis. Quasi ad aperiam voluptatibus optio fugiat, sit porro atque.</h1>
-      <div class="social-icons">
-        <a href=""><img src="./assets/svg/linkedin.svg" alt="Linkedin"></a>
-        <a href=""><img src="./assets/svg/GitHub_light.svg" alt="Github"></a>
-        <a href="" class="cv">
-          <p>CV</p>
-        </a>
+  <main>
+    <div class="principal-container">
+      <div class="description">
+        <h1>Sergio Salazar</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda vero aut, velit odio ducimus,
+          iusto,
+          excepturi hic voluptatem in veritatis. Quasi ad aperiam voluptatibus optio fugiat, sit porro atque.</h1>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/chekho"><img src="./src/assets/icons/linkedin.svg" alt="Linkedin"
+              aria-label="LinkedIn" decoding="async"></a>
+          <a href="https://github.com/chekho"><img src="./src/assets/icons/GitHub_light.svg" alt="Github"
+              aria-label="GitHub" decoding="async"></a>
+          <a href="./public/CV_Sergio_Salazar.pdf" class="cv" target="_blank" rel="noopener noreferrer">
+            <span>CV</span>
+          </a>
+        </div>
       </div>
+      <picture class="img-container">
+        <source srcset="./src/assets/images/userimage.avif" type="image/avif">
+        <source srcset="./src/assets/images/userimage.webp" type="image/webp">
+        <img class="img-user" src="./src/assets/images/userimage.png" alt="Foto de Sergio Salazar" decoding="async"
+          width="385" height="385">
+      </picture>
     </div>
-    <div class="img-container">
-      <img class="img-user" src="./assets/images/userimage.png" alt="">
-    </div>
-  </div>
-  <div></div>
+  </main>
 </body>
-<script src="index.js"></script>
 
 </html>
