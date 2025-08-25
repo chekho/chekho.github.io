@@ -118,8 +118,8 @@ div {
 
 .img-container {
   display: flex;
-  width: 385;
-  height: 385;
+  width: 385px;
+  height: 385px;
   justify-content: center;
   align-items: center;
 }
