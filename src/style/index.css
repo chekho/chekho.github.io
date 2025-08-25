@@ -81,11 +81,10 @@ header {
   z-index: 1;
   background-color: rgb(255, 255, 255, 0.3);
   background: linear-gradient(
-  to bottom, 
-  rgb(255, 255, 255, 0.5),   /* arriba: blanco semi-transparente */
-  rgb(224, 224, 224, 0.5)        /* abajo: gris sólido */
-);
-
+    to bottom,
+    rgb(255, 255, 255, 0.5),
+    rgb(224, 224, 224, 0.5)
+  );
 }
 
 a {
@@ -153,6 +152,7 @@ header > a:hover {
 }
 
 .cv {
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,16 +184,16 @@ header > a:hover {
   transform: rotate(5deg);
 }
 
-.name{
+.name {
   font-size: 5rem;
   font-weight: 700;
 }
 
-.text-description{
+.text-description {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
 }
 
-.text-description b{
-  color: #4a90e2;
+.text-description b {
+  color: #3570b0;
 }
