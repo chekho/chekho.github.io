@@ -127,11 +127,6 @@ header > a:hover {
   width: 50%;
 }
 
-.description > h1 {
-  font-size: 5rem;
-  font-weight: 700;
-}
-
 .img-container {
   display: flex;
   width: 385px;
@@ -187,6 +182,11 @@ header > a:hover {
   height: 100vh;
   width: 120vw;
   transform: rotate(5deg);
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 .text-description {
