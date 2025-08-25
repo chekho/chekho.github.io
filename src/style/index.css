@@ -92,6 +92,9 @@ div {
 
 .img-user {
   border-radius: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: 50px 50px 100px #bebebe, -50px -50px 100px #ffffff;
@@ -115,6 +118,8 @@ div {
 
 .img-container {
   display: flex;
+  width: 385;
+  height: 385;
   justify-content: center;
   align-items: center;
 }
